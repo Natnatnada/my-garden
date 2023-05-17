@@ -7,7 +7,7 @@ sans-serif; */
 body {
     margin: 0;
     box-sizing: border-box;
-    background: #0F2027;
+    background: #0f2027b0;
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
     font-family: 'Raleway', sans-serif;
 }
@@ -15,8 +15,46 @@ body {
 .subtitle {
     text-align: center;
     font-size: 3rem;
-    color: rgb(193, 208, 181);
+    color: rgb(255, 255, 255);
     font-family: 'Great Vibes', cursive;
+    background-image: url(./images/fondo1.jpg);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2rem;
+
+}
+
+.btn-container {
+    margin-bottom: 2rem;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.btnfilter {
+    outline: none;
+    color: #6a8a87;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border: 2px dashed #5d9e93;
+    border-radius: 15px;
+    background-color: #dddddd;
+    box-shadow: 0 0 0 4px #bdcfcd, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: .1s ease-in-out, .4s color;
+    margin-left: 5%;
+    width: 10rem;
+    height: 3rem;
+    margin-bottom: 5px;
+
+}
+
+.btnfilter:active {
+    transform: translateX(0.1em) translateY(0.1em);
+    box-shadow: 0 0 0 4px #639793, 1.5px 1.5px 2.5px 1.5px rgba(117, 197, 190, 0.5);
 }
 
 .center {
