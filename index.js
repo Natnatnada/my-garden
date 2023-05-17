@@ -51,6 +51,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
 //make a function to load each plant from de dbs
 function loadPLantsindividual(eachPlant) {
+    //fixing bug from the map function
     let displayPlant = eachPlant.map(function (plant) {
         // show in the console each plant, with the map
         // console.log(plant);
@@ -93,3 +94,4 @@ console.log(plantType)
 
     });
 });
+//semi sombra sol
