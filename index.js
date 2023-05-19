@@ -5,21 +5,21 @@ const plants = [
         name: 'Monstera Deliciosa',
         type: 'interior',
         img: './images/monstera.png',
-        description: 'Planta de interior, no soporta sol directo'
+        description: 'interior, no soporta sol directo'
     },
     {
         id: 2,
         name: 'Monstera Adansonii',
         type: 'interior',
         img: './images/adansonii.png',
-        description: 'Tambien conocida como cheese plant por sus hojas'
+        description: 'Tambien conocida como cheese plant'
     },
     {
         id: 3,
         name: 'Aeonium Arboreum',
         type: 'suculentas',
         img: './images/rosanegra.png',
-        description: 'Tambien conocida como rosa negra, es de sol directo'
+        description: 'Tambien conocida como rosa negra'
     },
     {
         id: 4,
@@ -40,7 +40,7 @@ const plants = [
         name: 'Singonio Plateado',
         type: 'interior',
         img: './images/singonio.png',
-        description: 'Exterior'
+        description: 'Exterior blabalbalbalal'
     },
     {
         id: 6,
@@ -68,7 +68,10 @@ function loadPLantsindividual(eachPlant) {
         // show in the console each plant, with the map
         // console.log(plant);
         return `<article class="cards-item">
-                <img src=${plant.img} class="item-img">
+                <div class="item-container">
+                    <div class="image-container">
+                    <img src=${plant.img} class="item-img">
+                </div>
                 <div class="item-text">
                 <div class="item-info">
                     <h3 class="item-title">${plant.name}</h3>
@@ -76,6 +79,7 @@ function loadPLantsindividual(eachPlant) {
                 <div class="item-description">
                     <p>${plant.description}</p>
                 </div>
+            </div>
             </div>
             </article>`;
     })
@@ -85,7 +89,7 @@ function loadPLantsindividual(eachPlant) {
     centerSection.innerHTML = displayPlant
 };
 
-//filter
+//filter for type, interior or suculentas
 filterbtn.forEach(function (btn) {
     btn.addEventListener('click', function (e) {
         // console.log(e.currentTarget.dataset.id)
@@ -102,7 +106,7 @@ filterbtn.forEach(function (btn) {
         } else {
             loadPLantsindividual(plantType);
         }
-console.log(plantType)
+        console.log(plantType)
 
     });
 });
