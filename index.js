@@ -30,13 +30,25 @@ const plants = [
     },
     {
         id: 5,
-        name: 'Cotyledon Tomentosa',
-        type: 'suculentas',
-        img: './images/garrita.png',
-        description: 'Tambien conocida como garrita de oso'
+        name: 'Aphelandra',
+        type: 'interior',
+        img: './images/aphelandra.png',
+        description: 'Interior bien iluminado'
+    },
+    {
+        id: 6,
+        name: 'Singonio Plateado',
+        type: 'interior',
+        img: './images/singonio.png',
+        description: 'Exterior'
+    },
+    {
+        id: 6,
+        name: 'Singonio Plateado',
+        type: 'interior',
+        img: './images/singonio.png',
+        description: 'Exterior'
     }
-
-
 ];
 
 const centerSection = document.querySelector('.center');
