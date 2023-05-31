@@ -43,7 +43,7 @@ const plants = [
         description: 'Exterior blabalbalbalal'
     },
     {
-        id: 6,
+        id: 7,
         name: 'Singonio Plateado',
         type: 'interior',
         img: './images/singonio.png',
